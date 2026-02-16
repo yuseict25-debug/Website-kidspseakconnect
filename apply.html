@@ -31,12 +31,14 @@
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_autoresponse"
                         value="Thank you for your inquiry! We have received your message and our team will get back to you as soon as possible. We look forward to seeing you at KidsSpeakConnect!">
-                    <input type="hidden" name="_next" id="next-field">
+                    <input type="hidden" name="_next" id="next-field" value="">
 
                     <script>
                         // Dynamically set the redirect URL to the absolute path of thank_you.html
-                        const currentPath = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
-                        document.getElementById('next-field').value = currentPath + "/thank_you.html";
+                        (function () {
+                            const baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+                            document.getElementById('next-field').value = baseUrl + "/thank_you.html";
+                        })();
                     </script>
 
                     <div class="form-group">
@@ -46,7 +48,7 @@
 
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="_replyto" placeholder="john@example.com" required>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
                     </div>
 
                     <div class="form-group">
