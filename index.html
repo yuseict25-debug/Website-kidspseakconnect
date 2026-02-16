@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidsSpeakConnect - Fun & Practical English</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header will be injected here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <header class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Fun & Practical<br>English for Kids!</h1>
+                <p class="hero-description">
+                    As a student-led non-profit volunteer organization, we invite elementary schoolers to join our fun,
+                    game-based English workshops! We skip the lectures and focus on learning through activities!
+                </p>
+                <div class="hero-buttons">
+                    <a href="apply.html" class="btn btn-primary">Apply Now</a>
+                    <a href="mission.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- PLACEHOLDER IMAGE -->
+                <img src="assets/hero-main.jpg" alt="Happy children learning English">
+            </div>
+        </div>
+    </header>
+
+    <!-- Mission Highlights -->
+    <section class="section bg-white text-center">
+        <div class="container">
+            <h2 class="section-title">Why KidsSpeakConnect?</h2>
+            <p class="section-subtitle container mb-8" style="max-width: 700px; margin-left:auto; margin-right:auto;">
+                We are a student-led non-profit volunteer organization. We believe English should be fun, not just a
+                subject to study.
+            </p>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="icon-circle">🎮</div>
+                    <h3>Game-Based Learning</h3>
+                    <p>No boring lectures! We learn English through exciting games and interactive activities.</p>
+                </div>
+                <a href="programs.html" class="card-link">
+                    <div class="card">
+                        <div class="icon-circle">📍</div>
+                        <h3>Local Workshops</h3>
+                        <p>We come to you! Join us at cultural and recreational centers in your neighborhood.</p>
+                    </div>
+                </a>
+                <a href="meet_the_team.html" class="card-link">
+                    <div class="card">
+                        <div class="icon-circle">🌏</div>
+                        <h3>Expert Team</h3>
+                        <p>Our members are all native-level speakers with experience living abroad, ready to guide you.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer will be injected here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+
+    <style>
+        .hero-container {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex-direction: column-reverse;
+            /* Mobile first */
+        }
+
+        @media (min-width: 768px) {
+            .hero-container {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .hero-content {
+                flex: 1;
+            }
+
+            .hero-image {
+                flex: 1;
+            }
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            color: var(--color-text-main);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        @media (min-width: 768px) {
+            .hero-buttons {
+                justify-content: flex-start;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+        }
+
+        .hero-image img {
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            background: #FFF3E0;
+            color: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1.5rem;
+        }
+
+        .bg-light {
+            background-color: var(--color-bg-light);
+        }
+
+        .bg-white {
+            background-color: #FFFFFF;
+        }
+    </style>
+</body>
+
+</html>

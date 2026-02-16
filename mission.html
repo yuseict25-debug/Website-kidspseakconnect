@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission & Values - KidsSpeakConnect</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <header class="page-header section text-center">
+        <div class="container">
+            <h1 class="page-title">Our Mission</h1>
+            <p class="page-subtitle">Fun & Practical English for Kids!</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-content">
+                    <h2>Moving from "Study" to "Experience"</h2>
+                    <p class="mb-4">
+                        KidSpeak Connect is run by students who have extensive experience living abroad. As native-level
+                        speakers, we noticed that many English learners in Japan focus heavily on grammar and testing
+                        ("studying"), but rarely get the chance
+                        to use English in a fun, natural way ("experiencing").
+                        We host workshops mainly in Kawasaki and we are based in Tokyo!
+                    </p>
+                    <p>
+                        We provide a space where you can use the English you've learned to
+                        communicate, play, and connect with others.
+                    </p>
+                </div>
+                <div class="mission-stats">
+                    <div style="margin-bottom: 2rem;">
+                        <img src="assets/workshop-1.jpg" alt="English workshop in action"
+                            style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    </div>
+                    <div
+                        style="background: white; padding:2rem; border-radius:var(--radius-lg); box-shadow:var(--shadow-md); text-align:center;">
+                        <h3>"English is a tool for connection."</h3>
+                        <p style="margin-top:1rem; color:#666;">We want you to feel the joy of understanding and being
+                            understood.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values / What We Do -->
+    <section class="section bg-white">
+        <div class="container text-center">
+            <h2 class="section-title mb-8">What We Value</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="icon-circle">😄</div>
+                    <h3>Fun First</h3>
+                    <p>If it's not fun, you won't want to continue. We prioritize enjoyment in every workshop.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-circle">🗣️</div>
+                    <h3>Real Talk</h3>
+                    <p>Conversations with fluent speakers (us!) about topics you actually care about.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-circle">🤝</div>
+                    <h3>Connection</h3>
+                    <p>Building friendships that go beyond just a teacher-student relationship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <style>
+        .page-header {
+            padding: 5rem 0 4rem;
+        }
+
+        .page-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .page-subtitle {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-text-main);
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media(min-width:768px) {
+            .mission-grid {
+                grid-template-columns: 3fr 2fr;
+            }
+        }
+
+        .mission-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--color-primary);
+        }
+
+        .mission-content p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #444;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            padding: 2rem;
+            background: #fff;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .icon-circle {
+            width: 50px;
+            height: 50px;
+            background: #fafafa;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+    </style>
+</body>
+
+</html>
