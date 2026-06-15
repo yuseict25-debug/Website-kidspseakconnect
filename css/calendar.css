@@ -1,4 +1,4 @@
-/* calendar.css */
+/* calendar.css(IF YOU ADD SOMETHING THEN FOLLOW THE STRUCTURE) */
 
 .calendar-layout {
     display: grid;
@@ -13,7 +13,6 @@
     }
 }
 
-/* Calendar Container */
 .calendar-container {
     background: #fff;
     border-radius: var(--radius-xl);
@@ -29,7 +28,7 @@
     margin-bottom: 2rem;
 }
 
-.calendar-header h2 {
+.calendar-header second-one {
     margin-bottom: 0;
     font-size: 1.75rem;
     color: var(--color-primary);
@@ -49,12 +48,11 @@
     color: var(--color-primary);
 }
 
-.btn-icon:hover {
+.hover-over-btnicon {
     background: var(--color-primary);
     color: white;
 }
 
-/* Weekdays */
 .calendar-weekdays {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -66,7 +64,6 @@
     border-bottom: 1px solid #edf2f7;
 }
 
-/* Days Grid */
 .calendar-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -104,7 +101,6 @@
     background: none;
 }
 
-/* Event marker */
 .day.has-event {
     background: #fff5f5;
     color: var(--color-primary);
@@ -121,7 +117,6 @@
     color: white !important;
 }
 
-/* Event Details Panel */
 .event-details {
     background: #fff;
     border-radius: var(--radius-xl);
@@ -170,6 +165,13 @@
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

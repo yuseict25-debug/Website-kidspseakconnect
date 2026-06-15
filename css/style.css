@@ -1,21 +1,14 @@
 :root {
-    /* KidsSpeakConnect Brand Theme */
+    /* brand theme */
     --color-primary: #EE4B4B;
-    /* Friendly Red (Speech Bubble) */
     --color-secondary: #0099FF;
-    /* Bright Blue (Globe) */
     --color-accent: #FFCC00;
-    /* Spark Yellow */
-
     --color-text-main: #333333;
     --color-text-light: #666666;
     --color-bg-light: #FFF9F0;
-    /* Warm Cream (derived from logo Yellow) */
     --color-white: #FFFFFF;
-
     --font-heading: 'Nunito', sans-serif;
     --font-body: 'Open Sans', sans-serif;
-
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -134,8 +127,6 @@ img {
     color: var(--color-primary);
 }
 
-/* Components */
-/* Navbar */
 .navbar {
     background: var(--color-white);
     box-shadow: var(--shadow-sm);
@@ -176,7 +167,32 @@ img {
     color: var(--color-primary);
 }
 
-/* Footer */
+.nav-lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+}
+
+.nav-lang-switcher a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-lang-switcher a.active {
+    color: var(--color-primary);
+}
+
+.nav-lang-switcher a:hover:not(.active) {
+    color: var(--color-text-main);
+}
+
+.nav-lang-switcher .separator {
+    color: #CBD5E0;
+    font-weight: 400;
+}
+
 .footer {
     background-color: #2D3748;
     color: #E2E8F0;
@@ -211,7 +227,6 @@ img {
     color: #A0AEC0;
 }
 
-/* Hamburger Menu (Mobile) */
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -223,7 +238,7 @@ img {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        /* Hide for now, Javascript will toggle */
+        /* Hide this for now and js will do the toggling later */
         position: absolute;
         top: 100%;
         left: 0;

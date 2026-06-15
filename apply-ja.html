@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply - KidsSpeakConnect</title>
+    <title>応募する - KidsSpeakConnect</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
@@ -18,8 +18,8 @@
 
     <header class="page-header section bg-light text-center">
         <div class="container">
-            <h1 class="page-title">Interested in our services?</h1>
-            <p class="page-subtitle">We look forward to hearing from you!</p>
+            <h1 class="page-title">サービスにご興味がありますか？</h1>
+            <p class="page-subtitle">ご連絡をお待ちしております！</p>
         </div>
     </header>
 
@@ -27,31 +27,31 @@
         <div class="container" style="max-width: 700px;">
             <div id="form-container" class="inquiry-container">
                 <form action="https://formsubmit.co/kidsspeakconnect@gmail.com" method="POST" class="inquiry-form">
-                    <!-- config for form submission -->
-                    <input type="hidden" name="_subject" value="New Inquiry from KidsSpeakConnect!">
+                    <!-- config for formsubmit -->
+                    <input type="hidden" name="_subject" value="New Inquiry from KidsSpeakConnect! (Japanese)">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_autoresponse"
-                        value="Thank you for your inquiry! We have received your message and our team will get back to you as soon as possible. We look forward to seeing you at KidsSpeakConnect!">
+                        value="お問い合わせありがとうございます！メッセージを受け取りました。担当者よりできるだけ早くお返事いたします。KidsSpeakConnectでお会いできるのを楽しみにしています！">
                     <input type="hidden" name="_next" id="next-field" value="">
 
                     <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" placeholder="山田 太郎" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" placeholder="taro@example.com" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Your Inquiry</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..."
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea id="message" name="message" rows="5" placeholder="お手伝いできることを教えてください..."
                             required></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                        Send Inquiry &rarr;
+                        送信する &rarr;
                     </button>
                 </form>
             </div>
@@ -106,7 +106,7 @@
             resize: vertical;
         }
 
-        /* KEEP THIS FOR FUTURE LIVE USE THERES ALSO ONE IN THE JP VER */
+        /* SUCCESS MESSAGE STYLINE (JUST KEEP THIS FOR USAGE IN THE FUTURE) */
         .success-message {
             text-align: center;
             padding: 2rem 1rem;
