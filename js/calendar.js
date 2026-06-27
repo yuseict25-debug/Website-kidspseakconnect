@@ -36,12 +36,12 @@ const EVENTS_DATA = [
     }
   },
   {
-    date: '2026-03-08',
-    title: { en: 'Interactive Storytelling Session', ja: 'インタラクティブ・ストーリーテリング' },
-    time: '15:00 - 16:30',
-    location: { en: 'Kawasaki Library (Kids Corner)', ja: '川崎図書館（キッズコーナー）' },
+    date: '2026-06-27',
+    title: { en: 'スクラム２１ event', ja: 'スクラみ２１' },
+    time: '09:00 - 15:30',
+    location: { en: '川崎市男女共同参画センター', ja: '川崎市男女共同参画センター' },
     description: {
-      en: 'Listen to a fun English story and act it out together! This workshop focuses on listening skills and building confidence in speaking.',
+      en: 'Come visit us at our booth on the 4th floor of the building with fun and interactive games in English!',
       ja: '楽しい英語のお話を聞いて、みんなで演じてみましょう！このワークショップでは、リスニングスキルとスピーキングの自信を養うことに焦点を当てています。'
     }
   }
